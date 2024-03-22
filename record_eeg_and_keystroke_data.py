@@ -50,7 +50,6 @@ keystroke_data = {'Keystroke': 0}
 def keyboard_listening():
     def on_press(key):
         try:
-            print("got to first try loop")
             if key == keyboard.Key.alt_l or key == keyboard.Key.alt_r:
                 keystroke_data['Timestamp'] = time.time()
                 keystroke_data['Keystroke'] = 1
